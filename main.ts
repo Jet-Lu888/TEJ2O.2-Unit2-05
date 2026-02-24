@@ -13,6 +13,8 @@ basic.showIcon(IconNames.Happy)
 
 // Temperature (in kelvin) will display when A is pressed
 input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
+    pause(500)
     temperature = input.temperature()
     temperatureKelvin = Math.round(temperature + 273.15)
     basic.showString("The temperature is" + temperatureKelvin + " K")
