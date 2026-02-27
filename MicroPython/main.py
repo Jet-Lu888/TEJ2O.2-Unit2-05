@@ -15,7 +15,6 @@ display.clear()
 display.show(Image.HAPPY)
 sleep(1000)
 
-
 # temperature will display when A is pressed
 while True:
     if button_a.is_pressed():
